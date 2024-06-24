@@ -1,0 +1,153 @@
+.content {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.float-left {
+ float: left;   
+}
+.float-right {
+    float: right;
+}
+.clear-float {
+    clear: both;
+}
+
+.phone-icon {
+    color: #158bbc;
+    font-size: 12px; 
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+
+a:hover, a:active, a:link, a:visited {
+    text-decoration: none;
+    color: #333
+}
+
+button {
+    color: #1aa1db;
+    background-color: #fff; 
+    border: 1px solid #158bbc;
+    padding: .8rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9rem;
+    border-radius: 3rem;
+}
+
+#nav-number {
+    display: inline;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+#nav-a-list {
+    padding-top: 2rem;
+}
+
+#nav-a-list li {
+    margin-left: 2.1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+}
+
+#hero {
+    background-image: url("img/header-background.jpg");
+    padding: 10rem 0;
+}
+
+#hero-button{
+    color: #fff;
+    background-color: #158bbc;
+    padding: .8rem 3rem;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+#side-title {
+    font-size: 2.6rem;
+    text-align: right;
+    font-weight: 200;
+    color: rgb(58, 59, 66);
+}
+
+#welcome-title {
+    font-size: 1.6rem;
+    margin-bottom: .3rem;
+    font-weight: 200;
+}
+
+#hero-title {
+    font-size: 3.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(58, 59, 66);
+}
+
+#hero-sub-title {
+    font-size: 1.6rem;
+    margin-bottom: .1rem;
+    /* font-weight: 300; */
+    color: #158bbc;
+}
+
+#hero-para {
+    max-width: 33rem;
+    line-height: 2;
+    margin-bottom: 2em;
+    /* font-size: 17px; */
+}
+
+#blue-links{
+    /* margin-top: 0;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+#blue-links ul {
+    margin: 1rem auto;
+    padding: 0;
+    width: 100%;
+}
+
+#blue-links li{
+    background-color: #158bbc;
+    color: #fff;
+    padding: .6rem 2.7rem;
+    text-align: center;
+    border-radius: .3rem;
+    display: block;
+    float: left;
+    font-size: 1.3rem;
+    margin: 0 .3rem;
+}
+
+#blue-links p {
+    margin: .7rem auto;
+    padding: 0 .8rem;
+}
+
+#bg-compassion {
+    background-image: url("img/compassionate-dental-care.jpg");
+}
+
+#bg-emergency {
+    background-image: url("img/dental-emergencies.jpg");
+}
+
+footer {
+    background-color: #084678;
+    color: #eee;
+}
+
+footer a:hover, footer a:active, footer a:link, footer a:visited {
+    color: #eee;
+}
