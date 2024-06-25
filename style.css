@@ -178,6 +178,55 @@ ul {
     padding:0;
 }
 
+/*  *  **  **  *  */
+
+#team {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.member {
+    margin: 1rem;
+    position: relative;
+}
+
+.member img {
+    border-radius: 1.5rem;
+}
+
+.member p {
+    background-color: rgb(122, 197, 222);
+    color: #fff;
+    text-align: center;
+    border-radius: 3rem;
+    padding: .8rem 1.7rem;
+    min-width: 17rem;
+    font-size: 1.1rem;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-aside {
+    margin: auto 3.2rem;
+    line-height: 1.8rem;
+}
+
+.team-aside h2 {
+    font-size: 2.5rem;
+}
+
+.team-aside button {
+    padding: 1.2rem 6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*  *  **  **  *  */
+
 #bg-compassion {
     background-image: url("img/compassionate-dental-care.jpg");
 }
