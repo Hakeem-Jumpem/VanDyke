@@ -16,6 +16,7 @@
     <div class="content">
         <header>
             <img src="img/logo.png" alt="Van Dyke General &amp; Implant Dentistry" class="float-left">
+            <!-- The nav should change into a hamburger when it reaches a certain size -->
             <nav class="float-right">
                 <div class="float-right">
                     <i class="fa-solid fa-phone-flip phone-icon"></i>
@@ -46,22 +47,22 @@
             <button id="hero-button" class="poppins-regular">schedule a consultation</button>
         </div>
         <div id="blue-links">
-            <ul class="poppins-regular">
-                <li> 
-                    <img src="img/general-dentistry-icon.png" class="float-left" alt="General Dentistry">
-                    <p class="float-left">General Dentistry</p>
+            <ul class="poppins-regular row">
+                <li class="col-m-3"> 
+                    <img src="img/general-dentistry-icon.png" class="" alt="General Dentistry">
+                    <p class="">General Dentistry</p>
                 </li>
-                <li>
-                    <img src="img/implant-dentistry-icon.png" class="float-left" alt="Implant Dentistry">&nbsp;&nbsp;&nbsp;
-                    <p class="float-left">Implant Dentistry</p>
+                <li class="col-m-3">
+                    <img src="img/implant-dentistry-icon.png" class="" alt="Implant Dentistry">&nbsp;&nbsp;&nbsp;
+                    <p class="">Implant Dentistry</p>
                 </li>
-                <li>
-                    <img src="img/cosmetic-dentistry-icon.png" class="float-left" alt="Costmetic Dentistry">&nbsp;&nbsp;&nbsp;
-                    <p class="float-left">Costmetic Dentistry</p>
+                <li class="col-m-3">
+                    <img src="img/cosmetic-dentistry-icon.png" class="" alt="Costmetic Dentistry">&nbsp;&nbsp;&nbsp;
+                    <p class="">Costmetic Dentistry</p>
                 </li>
-                <li>
-                    <img src="img/emergency-dentistry-icon.png" class="float-left" alt="Emergency Dentistry">&nbsp;&nbsp;&nbsp;
-                    <p class="float-left">Emergency Dentistry</p>
+                <li class="col-m-3">
+                    <img src="img/emergency-dentistry-icon.png" class="" alt="Emergency Dentistry">&nbsp;&nbsp;&nbsp;
+                    <p class="">Emergency Dentistry</p>
                 </li>
             </ul>
         </div>
@@ -148,26 +149,29 @@
         </div>
         <footer>
             <div class="row">
-
-                <div class="col-m-3">
+                <div class="col-m-4 footer">
                     <img src="img/logo-footer.png" alt="Logo">
                     <h3 class="poppins-light footer-phone">(352) 377-1781</h3>
                     <img src="img/credit-cards.png" alt="Credit Cards">
                     &nbsp;&nbsp;
                     <img src="img/credit-care.png" alt="Credit Cares">
                 </div>
-
-                <div class="col-m-2">
-                    <h3>Office Location</h3>
-                    <p>4960 W. Newberry Rd. Ste 200</p>
-                    <p>Gainesville, FL 32607</p>
-                    <br/>
-                    <p>Mon-Fri:&nbsp;&nbsp;8:00am-5:00pm</p>
-                    <p>Sat:&nbsp;&nbsp;By Appointment</p>
+                <div class="col-m-3">
+                    <h3 class="poppins-regular footer-title">Office Location</h3>
+                    <p class="poppins-light footer-col-mx-w">
+                        4960 W. Newberry Rd. Ste 200
+                        <br>
+                        Gainesville, FL 32607
+                        <br/>
+                        <br/>
+                        Mon-Fri: <span class="float-right">8:00am-5:00pm</span>
+                        <br/>
+                        Sat: <span class="float-right">By Appointment</span>
+                    </p>
                 </div>
                 <div class="col-m-3">
-                    <h3>Quick Links</h3>
-                    <ul>
+                    <ul class="poppins-regular">
+                        <li><h3 class="poppins-regular footer-title">Quick Links</h3></li>
                         <li><a href="#">General Dentistry</a></li>
                         <li><a href="#">Implant Dentistry</a></li>
                         <li><a href="#">Cosmetic Services</a></li>
@@ -175,14 +179,16 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-m-3">
-                    <h3>Follow us</h3>
+                <div class="col-m-2">
+                    <h3 class="poppins-regular footer-title">Follow us</h3>
                     <div>
-                        <i>circle</i>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
                     </div>
                 </div>
             </div>
-            <p id="bottom-footer">
+            <p id="bottom-footer" class="poppins-light">
                 COPYRIGHT &copy;2024VAN DYKE AND IMPLANT DENTISTRY ALL RIGTHS RESERVED.
             </p>
         </footer>

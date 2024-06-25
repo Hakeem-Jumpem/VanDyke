@@ -20,6 +20,9 @@
 
 ul li {
     list-style: none;
+}
+
+nav ul li {
     display: inline;
 }
 
@@ -105,35 +108,35 @@ button {
     margin-bottom: 2em;
     /* font-size: 17px; */
 }
-
+/* 
 #blue-links{
-    /* margin-top: 0;
+    margin-top: 0;
     margin-left: auto;
-    margin-right: auto; */
-}
+    margin-right: auto;
+} */
 
-#blue-links ul {
+/* #blue-links ul {
     margin: 1rem auto;
     padding: 0;
     width: 100%;
-}
+} */
 
 #blue-links li{
     background-color: #158bbc;
     color: #fff;
-    padding: .6rem 2.7rem;
+    /* padding: .6rem 2.7rem; */
     text-align: center;
     border-radius: .3rem;
-    display: block;
-    float: left;
+    /* display: block; */
+    /* float: left; */
     font-size: 1.3rem;
     margin: 0 .3rem;
 }
 
-#blue-links p {
+/* #blue-links p {
     margin: .7rem auto;
     padding: 0 .8rem;
-}
+} */
 
 #bg-compassion {
     background-image: url("img/compassionate-dental-care.jpg");
@@ -154,4 +157,33 @@ footer a:hover, footer a:active, footer a:link, footer a:visited {
 
 .footer-phone {
     font-size: 1.5rem;
+}
+
+footer .row {
+    padding: 4rem;
+}
+
+.dot {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-col-mx-w {
+    margin: 0;
+    max-width: 17rem;
+    padding: 0;
+}
+
+.footer-title {
+    font-size: 1.6rem;
+}
+
+#bottom-footer {
+    font-size: .7rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
 }
