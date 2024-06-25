@@ -151,3 +151,7 @@ footer {
 footer a:hover, footer a:active, footer a:link, footer a:visited {
     color: #eee;
 }
+
+.footer-phone {
+    font-size: 1.5rem;
+}
