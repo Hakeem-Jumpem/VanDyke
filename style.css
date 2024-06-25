@@ -1,6 +1,7 @@
 .content {
     max-width: 1600px;
     margin: auto;
+    color: #3a3b42;
 }
 
 .float-left {
@@ -79,7 +80,7 @@ button {
     font-size: 2.6rem;
     text-align: right;
     font-weight: 200;
-    color: rgb(58, 59, 66);
+    color: #3a3b42;
 }
 
 #welcome-title {
@@ -108,47 +109,36 @@ button {
     margin-bottom: 2em;
     /* font-size: 17px; */
 }
-/* 
-#blue-links{
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
-/* #blue-links ul {
-    margin: 1rem auto;
-    padding: 0;
-    width: 100%;
-} */
-
-/* #blue-links li{
-    background-color: #158bbc;
-    color: #fff;
-    padding: .6rem 2.7rem;
-    text-align: center;
-    border-radius: .3rem;
-    display: block;
-    float: left;
-    font-size: 1.3rem;
-    margin: 0 .3rem;
-} */
-
-/* #blue-links p {
-    margin: .7rem auto;
-    padding: 0 .8rem;
-} */
-
-.big-btn {
-    background-color: #158bbc;
-    color: #fff;
-    border-radius: .3rem;
-    margin: 0 .1rem;
-    padding: 0;
+.blue-btn-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.big-btn img {
-    margin-left: 4rem;
-    margin-right: 1rem;
+.big-btn-dark {
+    background-color: #158bbc;
+    color: #fff;
+    border-radius: .3rem;
+    padding: .8rem 5.8rem;
+}
+
+.big-btn-light {
+    background-color: rgb(122, 197, 222);
+    color: #fff;
+    border-radius: .3rem;
+    padding: .8rem 5.8rem;
+}
+
+.big-btn p {
+    font-size: 1.3rem;
+    padding: 0 .2rem;
+}
+
+#gen-dentistry h2 {
+    font-size: 2.5rem;
+    color: #3a3b42;;
 }
 
 ul {
