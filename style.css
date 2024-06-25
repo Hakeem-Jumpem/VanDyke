@@ -136,9 +136,42 @@ button {
     padding: 0 .2rem;
 }
 
+.gen-dentistry-flex {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+
+.gen-dentistry-flex li {
+    list-style: disc;
+}
+
+.gen-dentistry-flex li::marker {
+    color: #158bbc;
+}
+
+#gen-dentistry p {
+    width: 35rem;
+    line-height: 1.8rem;
+}
+
+#gen-dentistry {
+    margin-top: 4rem;
+}
+
 #gen-dentistry h2 {
     font-size: 2.5rem;
-    color: #3a3b42;;
+}
+
+#gen-dentistry img {
+    border-top-left-radius: 1.7rem;
+}
+
+#gen-dentistry button {
+    padding: 1.2rem 6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 ul {
