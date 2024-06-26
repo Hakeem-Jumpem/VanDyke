@@ -43,9 +43,26 @@ nav ul li {
 }
 
 
-a:hover, a:active, a:link, a:visited {
+nav a:hover, a:active, a:link, a:visited {
     text-decoration: none;
     color: #333
+}
+
+nav a:hover {
+    /* border: solid #158bbc 1px; */
+    padding: 1rem;
+    color: #000;
+    box-shadow: 1px 3px 3px 1px #ddd;
+    border-radius: 3rem;
+}
+
+nav a:active {
+    /* border: solid #158bbc 1px; */
+    padding: 1rem;
+    color: #000;
+    box-shadow: 1px 1px 1px 1px #ddd;
+    transform: translateY(4px);
+    border-radius: 3rem;
 }
 
 button {
@@ -92,6 +109,7 @@ button:active {
 #hero {
     background-image: url("img/header-background.jpg");
     padding: 10rem 0;
+    background-repeat: no-repeat;
 }
 
 #hero-button{
@@ -104,12 +122,22 @@ button:active {
     text-transform: uppercase;
 }
 
-#side-title {
-    font-size: 2.6rem;
-    text-align: right;
-    font-weight: 200;
-    color: #3a3b42;
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+#hero-button:hover{
+    color: #158bbc;
+    background-color: #fff;
+    padding: .8rem 3rem;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
 
 #welcome-title {
     font-size: 1.6rem;
@@ -131,37 +159,67 @@ button:active {
     color: #158bbc;
 }
 
+#side-title {
+    font-size: 2.6rem;
+    text-align: right;
+    font-weight: 200;
+    color: #3a3b42;
+    margin: 0;
+}
+
 #hero-para {
-    max-width: 33rem;
     line-height: 2;
-    margin-bottom: 2em;
-    /* font-size: 17px; */
+    margin: 0;
+    font-size: 17px;
+    width: 40rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .blue-btn-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
-.big-btn-dark {
+.big-btn:hover {
     background-color: #158bbc;
     color: #fff;
     border-radius: .3rem;
-    padding: .8rem 5.8rem;
+    /* padding: .8rem 5.8rem; */
+    box-shadow: 5px 5px 10px 5px #ccc;
 }
 
-.big-btn-light {
+.big-btn:active {
+    background-color: #158bbc;
+    color: #fff;
+    border-radius: .3rem;
+    /* padding: .8rem 5.8rem; */
+    box-shadow: 3px 3px 7px 3px #ccc;
+    transform: translateY(4px);
+}
+
+.big-btn {
     background-color: rgb(122, 197, 222);
     color: #fff;
     border-radius: .3rem;
-    padding: .8rem 5.8rem;
+    padding: 1rem 2.7rem;
+}
+
+.big-btn img {
+    max-width: 53px;
+    max-height: 53px;
 }
 
 .big-btn p {
-    font-size: 1.3rem;
-    padding: 0 .2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0 0 0 .2rem;
+    margin: 0 0 0 .5rem;
 }
 
 .gen-dentistry-flex {
@@ -240,7 +298,7 @@ ul {
     border-radius: 1.5rem;
 }
 
-.member p {
+.member button {
     background-color: rgb(122, 197, 222);
     color: #fff;
     text-align: center;
@@ -253,6 +311,13 @@ ul {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+}
+
+.member button:hover {
+    color: rgb(122, 197, 222);
+    background-color: #fff;
+    border: rgb(122, 197, 222) solid .2rem;
 }
 
 .team-aside {
@@ -353,8 +418,17 @@ footer a:hover, footer a:active, footer a:link, footer a:visited {
     font-size: 1.5rem;
 }
 
-footer .row {
-    padding: 4rem;
+footer {
+    padding: 4rem 4rem 0 4rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gap {
+    text-align: right;
 }
 
 .dot {
@@ -366,12 +440,6 @@ footer .row {
     margin: 0 5px;
 }
 
-.footer-col-mx-w {
-    margin: 0;
-    max-width: 17rem;
-    padding: 0;
-}
-
 .footer-title {
     font-size: 1.6rem;
 }
@@ -379,6 +447,6 @@ footer .row {
 #bottom-footer {
     font-size: .7rem;
     padding-left: 4rem;
-    padding-bottom: 1rem;
-    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 0;
 }
