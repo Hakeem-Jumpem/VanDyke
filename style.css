@@ -1,6 +1,10 @@
+body {
+    margin: 0;
+}
+
 .content {
     max-width: 1600px;
-    margin: auto;
+    margin: 0 auto;
     color: #3a3b42;
 }
 
@@ -147,8 +151,22 @@ button {
     /* align-items: center; */
 }
 
+.gen-dentistry-flex>div {
+    margin: 0 3rem;
+}
+
+.gen-dentistry-flex ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-end;
+    margin-top: 2rem;
+}
+
 .gen-dentistry-flex li {
     list-style: disc;
+    list-style-position: inside;
+    flex: 50%;
+    margin-bottom: .5rem;
 }
 
 .gen-dentistry-flex li::marker {
@@ -342,4 +360,5 @@ footer .row {
     font-size: .7rem;
     padding-left: 4rem;
     padding-bottom: 1rem;
+    margin: 0;
 }
