@@ -8,18 +8,25 @@ body {
     color: #3a3b42;
 }
 
-.float-left {
- float: left;   
-}
-.float-right {
-    float: right;
-}
-.clear-float {
-    clear: both;
-}
-
 header {
     margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header img {
+    max-height: 70px;
+    max-width: 296px;
+}
+
+nav div {
+    text-align: right;
+}
+
+
+nav ul {
+    margin-top: 0;
 }
 
 .phone-icon {
@@ -50,6 +57,19 @@ button {
     text-decoration: none;
     font-size: .9rem;
     border-radius: 3rem;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #158bbc;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    color: #fff;
+    background-color: #158bbc;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(4px);
 }
 
 #nav-number {
