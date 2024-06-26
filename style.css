@@ -14,6 +14,10 @@
     clear: both;
 }
 
+header {
+    margin-top: 3rem;
+}
+
 .phone-icon {
     color: #158bbc;
     font-size: 12px; 
@@ -160,8 +164,13 @@ button {
     margin-top: 4rem;
 }
 
-#gen-dentistry h2 {
+h2 {
     font-size: 2.5rem;
+}
+
+.break-line {
+    display: block;
+    margin-top: 1rem;
 }
 
 #gen-dentistry img {
@@ -177,8 +186,6 @@ button {
 ul {
     padding:0;
 }
-
-/*  *  **  **  *  */
 
 #team {
     display: flex;
@@ -225,14 +232,74 @@ ul {
     text-transform: uppercase;
 }
 
-/*  *  **  **  *  */
+.bg-img-container {
+    position: relative;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.bg-img-container h2 {
+    color: #000;
+}
+
+.bg-p-left {
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    right: 5%;
+    bottom: 20%;
+    /* transform: -20%, -20%; */
+    background-color: rgb(255, 255, 255, .95);
+    border-radius: 1.8rem;
+    padding: 2rem 5rem 5rem 5rem;
+    line-height: 1.6rem;
+}
+
+.bg-p-right {
+    position: absolute;
+    top: 22%;
+    right: 52%;
+    left: 3%;
+    bottom: 20%;
+    /* transform: -20%, -20%; */
+    background-color: rgb(255, 255, 255, .95);
+    border-radius: 1.8rem;
+    padding: 3.5rem 5rem 5rem 5rem;
+    line-height: 1.7rem;
+}
 
 #bg-compassion {
     background-image: url("img/compassionate-dental-care.jpg");
+    background-repeat: no-repeat;
+    padding: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 #bg-emergency {
     background-image: url("img/dental-emergencies.jpg");
+    padding: 13rem;
+}
+
+.img-bubble {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 1.8rem;
+    width: 50%;
+}
+
+.img-bubble h2 {
+    font-size: 2.7rem;
+    margin: auto 0;
+    max-width: fit-content;
+}
+
+.img-bubble p {
+    /* width: 33rem; */
+    max-width: fit-content;
+}
+
+.inner-bubble {
+    /* margin: 15%; */
+    padding: 5rem;
 }
 
 footer {
