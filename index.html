@@ -20,12 +20,13 @@
             </a>
             <!-- The nav should change into a hamburger when it reaches a certain size -->
             <nav>
-                <div>
+                <div class="desktop-vw">
                     <i class="fa-solid fa-phone-flip phone-icon"></i>
                     <a id="nav-number" class="poppins-regular" href="tel:+13523771781">(352) 377-1781</a>
                     <a class="poppins-regular button">PATIENT LOGIN</a>
                     <a class="poppins-regular button">PATIENT FORMS</a>
                 </div>
+
                 <ul id="nav-a-list" class="poppins-regular">
                     <li><a href="#">General Dentistry</a></li>
                     <li><a href="#">Implant Dentistry</a></li>
@@ -33,6 +34,29 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+
+               <div id="mobile-nav">
+                    <div class="flex">
+                        <i class="fa-solid fa-phone-flip phone-icon"></i>
+                        <a id="nav-number" class="poppins-regular" href="tel:+13523771781">(352) 377-1781</a>
+                        <a class="openebtn" onclick="openNav()">&#9776;</a>
+                    </div>
+
+                    <div id="mySidenav" class="sidenav poppins-regular">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">General Dentistry</a>
+                        <a href="#">Implant Dentistry</a>
+                        <a href="#">Cosmetic Services</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+
+                        <div id="mobile-nav-bottom">
+                            <a class="poppins-regular button">PATIENT LOGIN</a>
+                            <a class="poppins-regular button">PATIENT FORMS</a>
+                        </div>
+                  </div>
+               </div>
+
             </nav>
         </header>
     
@@ -130,7 +154,7 @@
             </div>
         </div>
         <div class="test-bg" style="background-image: url(img/compassionate-dental-care.jpg);">
-            <div class="text-bg" style="margin-left: 43%;">
+            <div class="text-bg" style="margin-left: 50%;">
                 <h2 class="poppins-regular">Compassionate <span class="break-line">Dental Care</span></h2>
                 <p class="poppins-extralight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -138,7 +162,7 @@
             </div>
         </div>
         <div class="test-bg" style="background-image: url(img/dental-emergencies.jpg);">
-            <div class="text-bg" style="margin-right: 43%;">
+            <div class="text-bg" style="margin-left: 4%;">
                 <h2 class="poppins-regular">Dental Emergencies</h2>
                 <p class="poppins-extralight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -232,5 +256,15 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "20rem";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 </body>
 </html>
