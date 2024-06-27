@@ -592,11 +592,27 @@ footer {
 
       #mobile-nav .flex {
         justify-content: center;
-        justify-items: baseline;
+        align-items: center;
         display: flex;
+      }
+
+      #mobile-nav #nav-number {
+        margin: 0 1rem;
       }
 
       #mobile-nav-bottom {
         /* margin-top: -12p; */
+      }
+
+      #hero-button {
+        margin: 2rem 0;
+      }
+
+      .blue-btn-flex {
+        flex-wrap: wrap;
+      }
+
+      .big-btn {
+        flex: 50%;
       }
 }
