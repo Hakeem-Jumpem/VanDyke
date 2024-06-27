@@ -48,22 +48,14 @@ nav a:hover, a:active, a:link, a:visited {
     color: #333
 }
 
-nav a:hover {
+nav li a:hover {
     /* border: solid #158bbc 1px; */
-    padding: 1rem;
     color: #000;
-    border-radius: 3rem;
+    border-bottom: #158bbc solid 2px;
+    padding-bottom: 5px;
 }
 
-nav a:active {
-    /* border: solid #158bbc 1px; */
-    padding: 1rem;
-    color: #000;
-    transform: translateY(4px);
-    border-radius: 3rem;
-}
-
-button {
+.button {
     color: #1aa1db;
     background-color: #fff; 
     border: 1px solid #158bbc;
@@ -72,17 +64,17 @@ button {
     text-decoration: none;
     font-size: .9rem;
     border-radius: 3rem;
+
 }
 
-button:hover {
+.button:hover {
     color: #fff;
     background-color: #158bbc;
 }
 
-button:active {
+.button:active {
     color: #fff;
     background-color: #158bbc;
-    transform: translateY(4px);
 }
 
 #nav-number {
@@ -180,6 +172,7 @@ button:active {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0;
 }
 
 .big-btn:hover {
@@ -193,8 +186,6 @@ button:active {
     background-color: #158bbc;
     color: #fff;
     border-radius: .3rem;
-    /* padding: .8rem 5.8rem; */
-    transform: translateY(4px);
 }
 
 .big-btn {
@@ -207,13 +198,14 @@ button:active {
 .big-btn img {
     max-width: 53px;
     max-height: 53px;
+    margin: .5rem 0;
 }
 
 .big-btn p {
     font-size: 1.6rem;
     color: #fff;
     padding: 0 0 0 .2rem;
-    margin: 0 0 0 .5rem;
+    margin: 1rem 0 1rem .5rem;
 }
 
 .gen-dentistry-flex {
@@ -285,14 +277,43 @@ ul {
 
 .member {
     margin: 1rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .member img {
     border-radius: 1.5rem;
+    max-width: 325px;
+    max-height: 545;
 }
 
-.member button {
+.test-member {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.test-member img {
+    max-width: 325px;
+    max-height: 545;
+    border-radius: 3rem;
+    margin: auto;
+}
+
+.member .button {
+    max-width: 300px;
+    /* margin-top: -30px; */
+    margin: -8% auto 0 auto ;
+    background-color: rgb(122, 197, 222);
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 3rem;
+    padding: .8rem 15%;
+    font-size: 1.1rem;
+    border: none;
+}
+
+/* .member .button {
     background-color: rgb(122, 197, 222);
     color: #fff;
     text-align: center;
@@ -306,7 +327,7 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
-}
+} */
 
 .member button:hover {
     color: rgb(122, 197, 222);
