@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+box-sizing:border-box;
+}
+
 body {
     margin: 0;
 }
@@ -6,6 +12,15 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     color: #3a3b42;
+}
+
+.row{
+    display: flex;
+    flex: wrap;
+}
+
+.column {
+    vertical-align: middle;
 }
 
 header {
@@ -201,11 +216,19 @@ nav li a:hover {
     margin: .5rem 0;
 }
 
+#big-btn-list a {
+    white-space: nowrap;
+}
+
 .big-btn p {
     font-size: 1.6rem;
     color: #fff;
     padding: 0 0 0 .2rem;
     margin: 1rem 0 1rem .5rem;
+}
+
+#big-btn-list ul {
+    justify-content: space-between;
 }
 
 .gen-dentistry-flex {
@@ -507,6 +530,17 @@ footer {
         display: none;
     }
 
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column {
+        flex: 45%;
+        max-width: 45%;
+        margin: 10px;
+    }
+
     #mobile-nav {
         display: block;
     }
@@ -566,6 +600,17 @@ footer {
 
       }
 
+      #big-btn-list ul {
+        justify-content: center;
+
+      }
+
+      #big-btn-list a {
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+      }
+
       .openebtn {
         font-size: 3.5rem;
         display: inline;
@@ -600,19 +645,11 @@ footer {
         margin: 0 1rem;
       }
 
-      #mobile-nav-bottom {
-        /* margin-top: -12p; */
-      }
-
       #hero-button {
         margin: 2rem 0;
       }
 
-      .blue-btn-flex {
-        flex-wrap: wrap;
-      }
-
-      .big-btn {
-        flex: 50%;
+      .big-btn a.flex {
+        justify-content: center;
       }
 }
