@@ -113,6 +113,8 @@ nav li a:hover {
     background-image: url("img/header-background.jpg");
     padding: 10rem 0;
     background-repeat: no-repeat;
+    margin: 3rem;
+    margin-bottom: 0;
 }
 
 #hero-button{
@@ -208,6 +210,7 @@ nav li a:hover {
     color: #fff;
     border-radius: .3rem;
     padding: 1rem 2.7rem;
+    max-width: 100%;
 }
 
 .big-btn img {
@@ -229,6 +232,8 @@ nav li a:hover {
 
 #big-btn-list ul {
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .gen-dentistry-flex {
@@ -273,6 +278,10 @@ nav li a:hover {
     margin-top: 4rem;
 }
 
+#gen-dentistry .text-left {
+    margin-left: 0;
+}
+
 h2 {
     font-size: 2.5rem;
 }
@@ -284,6 +293,7 @@ h2 {
 
 #gen-dentistry img {
     border-top-left-radius: 1.7rem;
+    max-width: 50%;
 }
 
 #gen-dentistry button {
@@ -540,6 +550,18 @@ footer {
     display: none;
 }
 
+@media (max-width: 1580px) {
+    .big-btn {
+        padding: 1% 2%
+    }
+}
+
+@media (max-width: 1500px) {
+    .big-btn {
+        padding: .5% 1%
+    }
+}
+
 @media  (max-width: 1200px) {
     
     body {
@@ -674,13 +696,26 @@ footer {
         justify-content: center;
       }
 
+      #gen-dentistry img {
+        max-width: 100%;
+      }
+
       .gen-dentistry-flex {
         flex-direction: column;
         row-gap: 3rem;
         justify-content: center;
       }
 
-      .gen-dentistry-flex h2, .gen-dentistry-flex p {
+      #gen-dentistry p {
+        width: 45rem;
+        margin-left: 10rem;
+      }
+
+      .gen-dentistry-flex .text-left {
+        margin-left: 10rem;
+      }
+
+      .gen-dentistry-flex h2 {
         text-align: center;
         margin: 1rem auto;
       }
@@ -689,16 +724,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-items: center;
-        margin-top: 2rem;        
+        margin-top: 2rem;   
+        margin-left: 10rem;     
       }
-
-      .gen-dentistry-flex li {
-
-        /* flex: 50%;
-        margin-bottom: .5rem; */
-        /* justify-content: center; */
-        text-align: center;
-    }
 
     .gen-dentistry-flex .button {
         margin: auto;
@@ -708,6 +736,7 @@ footer {
 
     .team {
         flex-wrap: wrap;
+        margin: auto;
     }
 
     .team-aside {
@@ -718,6 +747,7 @@ footer {
     .team-mobile {
         order: 2;
         display: flex;
+        margin: auto;
     }
 
     .text-bg {
