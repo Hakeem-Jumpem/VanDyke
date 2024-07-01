@@ -515,6 +515,10 @@ footer {
     display: none;
 }
 
+.icons {
+    font-size: 2rem;
+}
+
 @media (max-width: 1580px) {
     .big-btn {
         padding: 1% 2%
@@ -529,6 +533,7 @@ footer {
     .member .button {
         font-size: .8rem;
     }
+
 }
 
 @media  (max-width: 1200px) {
@@ -755,16 +760,36 @@ footer {
     #gen-dentistry p {
         margin: auto;
         display: block;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 700px) {
+
+    
+    .content {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .text-left {
+        margin: auto;
+    }
+
     #mobile-nav i, #mobile-nav #nav-number {
         display: none;
     }
 
+    .button {
+        white-space: nowrap;
+    }
+
     #hero {
         padding: 0;
+        background-image: none;
     }
 
     #hero-para {
@@ -780,10 +805,12 @@ footer {
     }
     .gen-dentistry-flex ul {
         margin: 3rem 0;
+        display: block;
     }
 
     .team-aside h2 {
         text-align: center;
+        line-height: normal;
     }
     .team-aside .button {
         display: block;
@@ -801,5 +828,8 @@ footer {
     }
     #bottom-footer {
         padding: 0;
+    }
+    footer {
+        padding: 4rem 0;
     }
 }
