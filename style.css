@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+box-sizing:border-box;
+}
+
 body {
     margin: 0;
 }
@@ -6,6 +12,15 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     color: #3a3b42;
+}
+
+.row{
+    display: flex;
+    flex: wrap;
+}
+
+.column {
+    vertical-align: middle;
 }
 
 header {
@@ -201,6 +216,10 @@ nav li a:hover {
     margin: .5rem 0;
 }
 
+#big-btn-list a {
+    white-space: nowrap;
+}
+
 .big-btn p {
     font-size: 1.6rem;
     color: #fff;
@@ -208,11 +227,19 @@ nav li a:hover {
     margin: 1rem 0 1rem .5rem;
 }
 
+#big-btn-list ul {
+    justify-content: space-between;
+}
+
 .gen-dentistry-flex {
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap; */
     /* align-items: center; */
+}
+
+.gen-dentistry-flex img {
+    max-width: 100%;
 }
 
 .gen-dentistry-flex>div {
@@ -269,10 +296,18 @@ ul {
     padding:0;
 }
 
-#team {
+.team {
     display: flex;
     justify-content: space-between;
     margin: 3rem 0;
+}
+
+.team-mobile { 
+    display: flex;
+}
+
+.team-imgs {
+    display: block;
 }
 
 .member {
@@ -287,18 +322,18 @@ ul {
     max-height: 545;
 }
 
-.test-member {
+/* .test-member {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-}
 
-.test-member img {
+} */
+
+/* .test-member img {
     max-width: 325px;
     max-height: 545;
     border-radius: 3rem;
     margin: auto;
-}
+} */
 
 .member .button {
     max-width: 300px;
@@ -311,6 +346,7 @@ ul {
     padding: .8rem 15%;
     font-size: 1.1rem;
     border: none;
+    border: rgb(122, 197, 222) solid 1px;
 }
 
 /* .member .button {
@@ -329,10 +365,10 @@ ul {
     border: none;
 } */
 
-.member button:hover {
+.member .button:hover {
     color: rgb(122, 197, 222);
     background-color: #fff;
-    border: rgb(122, 197, 222) solid .2rem;
+    border: rgb(122, 197, 222) solid 1px;
 }
 
 .team-aside {
@@ -340,14 +376,44 @@ ul {
     line-height: 1.8rem;
 }
 
+.team-aside p{
+    margin-bottom: 5rem;
+}
+
 .team-aside h2 {
     font-size: 2.5rem;
 }
 
-.team-aside button {
-    padding: 1.2rem 6rem;
+.team-aside .button {
+    padding: 1rem 6rem;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.test-bg {
+    width: 100%;
+    /* margin-bottom: 3rem; */
+    padding: 9% 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+.text-bg {
+    background-color: rgb(255, 255, 255, .95);
+    width: 40%;
+    /* margin-right: 5%; */
+    border-radius: 1.8rem;
+    padding: 1.5rem 3rem;
+    max-width: 80%;
+}
+
+.text-left {
+    margin-left: 50%;
+}
+
+.text-right {
+    margin-left: 4%;
 }
 
 .bg-img-container {
@@ -464,4 +530,201 @@ footer {
     padding-left: 4rem;
     margin-top: 4rem;
     margin-bottom: 0;
+}
+
+.openebtn {
+    display: none;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+@media  (max-width: 1200px) {
+    
+    body {
+        margin-left: .8rem;
+    }
+    
+    ul {
+        display: none;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column {
+        flex: 45%;
+        max-width: 45%;
+        margin: 10px;
+    }
+
+    #mobile-nav {
+        display: block;
+
+    }
+
+    .lg-mobile-nav-menu {
+        font-size: 4rem;
+        margin-right: 1rem;
+        display: block;
+    }
+
+    .desktop-vw {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #158bbc;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        white-space: nowrap;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: inline-block;
+        min-width: 51%;
+        transition: 0.3s;
+        /* text-align: center; */
+        border-bottom: #158bbc solid 1px;
+        margin: 1rem 20px 1rem auto;
+      }
+
+      .sidenav a:hover {
+        border-bottom: #fff solid 1px;
+        color: #fff;
+      }
+
+      .sidenav a.closebtn {
+        border-bottom: #158bbc solid 1px;
+      }
+      
+      .sidenav a.closebtn {
+        /* position: absolute;
+        top: 0;
+        right: 25px; */
+        font-size: 3.5rem;
+        margin-left: 25px;
+
+      }
+
+      #big-btn-list ul {
+        justify-content: center;
+
+      }
+
+      #big-btn-list a {
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+      }
+
+      .openebtn {
+        font-size: 3.5rem;
+        display: inline;
+        margin-right: 1rem;
+        color: #158bbc;
+      }
+
+      #side-title {
+        display: none;
+      }
+
+      #hero {
+        /* padding: 10rem 5rem; */
+        margin-bottom: 1rem;
+        background-size: cover;
+      }
+
+      #mobile-nav .button {
+        border: #fff 5px solid;
+        background-color: #158bbc;
+        border-radius: 1rem;
+        font-size: 25px;;
+      }
+
+      #mobile-nav .flex {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      #mobile-nav #nav-number {
+        margin: 0 1rem;
+      }
+
+      #hero-button {
+        margin: 2rem 0;
+      }
+
+      .big-btn a.flex {
+        justify-content: center;
+      }
+
+      .gen-dentistry-flex {
+        flex-direction: column;
+        row-gap: 3rem;
+        justify-content: center;
+      }
+
+      .gen-dentistry-flex h2, .gen-dentistry-flex p {
+        text-align: center;
+        margin: 1rem auto;
+      }
+
+      .gen-dentistry-flex ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-top: 2rem;        
+      }
+
+      .gen-dentistry-flex li {
+
+        /* flex: 50%;
+        margin-bottom: .5rem; */
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    .gen-dentistry-flex .button {
+        margin: auto;
+        display: block;
+        max-width: 15rem;
+    }
+
+    .team {
+        flex-wrap: wrap;
+    }
+
+    .team-aside {
+        order: 1;
+        margin-bottom: 3rem;
+    }
+
+    .team-mobile {
+        order: 2;
+        display: flex;
+    }
+
+    .text-bg {
+        background-color: rgb(255, 255, 255, .95);
+        margin: auto;
+        border-radius: 1.8rem;
+        padding: 1.5rem 3rem;
+        width: 80%;
+    }
 }
