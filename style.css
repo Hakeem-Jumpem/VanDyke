@@ -64,7 +64,6 @@ nav a:hover, a:active, a:link, a:visited {
 }
 
 nav li a:hover {
-    /* border: solid #158bbc 1px; */
     color: #000;
     border-bottom: #158bbc solid 2px;
     padding-bottom: 5px;
@@ -111,6 +110,7 @@ nav li a:hover {
 
 #hero {
     background-image: url("img/header-background.jpg");
+    background-position: center;
     padding: 10rem 0;
     background-repeat: no-repeat;
     margin: 3rem;
@@ -160,7 +160,6 @@ nav li a:hover {
 #hero-sub-title {
     font-size: 1.6rem;
     margin-bottom: .1rem;
-    /* font-weight: 300; */
     color: #158bbc;
 }
 
@@ -196,7 +195,6 @@ nav li a:hover {
     background-color: #158bbc;
     color: #fff;
     border-radius: .3rem;
-    /* padding: .8rem 5.8rem; */
 }
 
 .big-btn:active {
@@ -239,8 +237,6 @@ nav li a:hover {
 .gen-dentistry-flex {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
 }
 
 .gen-dentistry-flex img {
@@ -314,6 +310,8 @@ ul {
 
 .team-mobile { 
     display: flex;
+    width: 65%;
+    flex-shrink: 0;
 }
 
 .team-imgs {
@@ -330,50 +328,23 @@ ul {
     border-radius: 1.5rem;
     max-width: 325px;
     max-height: 545;
+
+    width: 100%;
+    height: auto;
+    flex-shrink: 50%;
 }
 
-/* .test-member {
-    display: flex;
-    flex-direction: column;
-
-} */
-
-/* .test-member img {
-    max-width: 325px;
-    max-height: 545;
-    border-radius: 3rem;
-    margin: auto;
-} */
-
 .member .button {
-    max-width: 300px;
-    /* margin-top: -30px; */
+    max-width: 400px;
     margin: -8% auto 0 auto ;
     background-color: rgb(122, 197, 222);
     color: #fff;
-    /* text-align: center; */
     border-radius: 3rem;
     padding: .8rem 15%;
     font-size: 1.1rem;
     border: none;
     border: rgb(122, 197, 222) solid 1px;
 }
-
-/* .member .button {
-    background-color: rgb(122, 197, 222);
-    color: #fff;
-    text-align: center;
-    border-radius: 3rem;
-    padding: .8rem 1.7rem;
-    min-width: 17rem;
-    font-size: 1.1rem;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-} */
 
 .member .button:hover {
     color: rgb(122, 197, 222);
@@ -402,7 +373,6 @@ ul {
 
 .test-bg {
     width: 100%;
-    /* margin-bottom: 3rem; */
     padding: 9% 0;
     height: 100%;
     background-repeat: no-repeat;
@@ -412,7 +382,6 @@ ul {
 .text-bg {
     background-color: rgb(255, 255, 255, .95);
     width: 40%;
-    /* margin-right: 5%; */
     border-radius: 1.8rem;
     padding: 1.5rem 3rem;
     max-width: 80%;
@@ -442,7 +411,6 @@ ul {
     left: 52%;
     right: 5%;
     bottom: 20%;
-    /* transform: -20%, -20%; */
     background-color: rgb(255, 255, 255, .95);
     border-radius: 1.8rem;
     padding: 2rem 5rem 5rem 5rem;
@@ -455,7 +423,6 @@ ul {
     right: 52%;
     left: 3%;
     bottom: 20%;
-    /* transform: -20%, -20%; */
     background-color: rgb(255, 255, 255, .95);
     border-radius: 1.8rem;
     padding: 3.5rem 5rem 5rem 5rem;
@@ -487,12 +454,10 @@ ul {
 }
 
 .img-bubble p {
-    /* width: 33rem; */
     max-width: fit-content;
 }
 
 .inner-bubble {
-    /* margin: 15%; */
     padding: 5rem;
 }
 
@@ -559,6 +524,10 @@ footer {
 @media (max-width: 1500px) {
     .big-btn {
         padding: .5% 1%
+    }
+
+    .member .button {
+        font-size: .8rem;
     }
 }
 
@@ -635,9 +604,6 @@ footer {
       }
       
       .sidenav a.closebtn {
-        /* position: absolute;
-        top: 0;
-        right: 25px; */
         font-size: 3.5rem;
         margin-left: 25px;
 
@@ -666,7 +632,6 @@ footer {
       }
 
       #hero {
-        /* padding: 10rem 5rem; */
         margin-bottom: 1rem;
         background-size: cover;
       }
@@ -756,5 +721,85 @@ footer {
         border-radius: 1.8rem;
         padding: 1.5rem 3rem;
         width: 80%;
+    }
+
+    .team-mobile {
+        margin-bottom: 3rem;
+    }
+
+    .member .button {
+        font-size: 1rem;
+    }
+
+    .team-mobile {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #gen-dentistry .text-left {
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .big-btn p {
+       font-size: 1.4rem;
+    }
+
+    .big-btn.column {
+        max-width: 40%;
+    }
+
+
+    #gen-dentistry p {
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    #mobile-nav i, #mobile-nav #nav-number {
+        display: none;
+    }
+
+    #hero {
+        padding: 0;
+    }
+
+    #hero-para {
+        width: 100%;
+    }
+
+    .big-btn.column {
+        max-width: 100%;
+    }
+
+    #gen-dentistry p {
+        width: 100%;
+    }
+    .gen-dentistry-flex ul {
+        margin: 3rem 0;
+    }
+
+    .team-aside h2 {
+        text-align: center;
+    }
+    .team-aside .button {
+        display: block;
+    }
+
+    .team-mobile {
+        /* display: block; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+    }
+    #bottom-footer {
+        padding: 0;
     }
 }
