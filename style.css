@@ -534,6 +534,13 @@ footer {
         font-size: .8rem;
     }
 
+    .text-left {
+        margin-left: 40%;
+    }
+    .text-bg {
+        width: 55%;
+    }
+
 }
 
 @media  (max-width: 1200px) {
@@ -611,6 +618,11 @@ footer {
       .sidenav a.closebtn {
         font-size: 3.5rem;
         margin-left: 25px;
+      }
+
+      #mobile-nav .button:hover {
+        background-color: #fff;
+        color: #158bbc;
 
       }
 
@@ -695,7 +707,7 @@ footer {
         flex-wrap: wrap;
         justify-items: center;
         margin-top: 2rem;   
-        margin-left: 10rem;     
+        margin-left: 15%;     
       }
 
     .gen-dentistry-flex .button {
@@ -760,11 +772,29 @@ footer {
         max-width: 40%;
     }
 
+    .gen-dentistry-flex ul {
+        margin-left: 10%;
+    }
+
 
     #gen-dentistry p {
         margin: auto;
         display: block;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 830px) {
+    .big-btn.column {
+        max-width: 100%;
+    }
+
+    #big-btn-list ul {
+        flex-direction: column;
+    }
+
+    .gen-dentistry-flex ul {
+        margin-left: 5%;
     }
 }
 
@@ -804,10 +834,6 @@ footer {
 
     #hero-para {
         width: 100%;
-    }
-
-    .big-btn.column {
-        max-width: 100%;
     }
 
     #gen-dentistry p {
