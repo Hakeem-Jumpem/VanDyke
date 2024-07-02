@@ -35,6 +35,10 @@ header img {
     max-width: 296px;
 }
 
+.button {
+    white-space: nowrap;
+}
+
 nav div {
     text-align: right;
 }
@@ -324,6 +328,13 @@ ul {
     flex-direction: column;
 }
 
+@media(min-width: 700px) and (max-width: 830px) {
+    .member {
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+    }
+}
+
 .member img {
     border-radius: 1.5rem;
     max-width: 325px;
@@ -331,7 +342,6 @@ ul {
 
     width: 100%;
     height: auto;
-    flex-shrink: 50%;
 }
 
 .member .button {
@@ -543,6 +553,22 @@ footer {
 
 }
 
+@media (max-width: 1350px) {
+    .big-btn p {
+        font-size: 1.3rem;
+        /* padding: .5rem .5rem; */
+    }
+
+    .big-btn {
+        padding: .5rem 1.5rem;
+    }
+
+    /* .big-btn img {
+        width: 45px;
+        height: 45px;
+    } */
+}
+
 @media  (max-width: 1200px) {
     
     body {
@@ -562,6 +588,22 @@ footer {
         flex: 45%;
         max-width: 45%;
         margin: 10px;
+    }
+
+    .big-btn p {
+        font-size: 1.4rem;
+    }
+
+    .inner-hero {
+        margin-left: 3rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 80%;
+        border-radius: 20rem;
+        }
+        
+    #hero {
+        margin: 0;
+        
     }
 
     #mobile-nav {
@@ -714,6 +756,8 @@ footer {
         margin: auto;
         display: block;
         max-width: 15rem;
+        font-size: 1rem;
+        text-transform: uppercase;
     }
 
     .team {
@@ -782,6 +826,10 @@ footer {
         display: block;
         max-width: 100%;
     }
+
+    .member .button {
+        font-size: .9rem;
+    }
 }
 
 @media (max-width: 830px) {
@@ -796,6 +844,26 @@ footer {
     .gen-dentistry-flex ul {
         margin-left: 5%;
     }
+
+    .inner-hero {
+        width: 90%;
+    }
+
+    .member .button {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .member .button {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .member .button {
+        font-size: .8rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -805,8 +873,15 @@ footer {
         margin: 0;
     }
 
+    .member .button {
+        font-size: 1.6rem;
+        max-width: 600px;
+    }
+
+    
+
     header img {
-        width: 80%;
+        width: 90%;
         height: auto;
         padding-left: 1rem;
     }
@@ -844,6 +919,10 @@ footer {
         display: block;
     }
 
+    .gen-dentistry-flex .button {
+        max-width: 100%;
+    }
+
     .team-aside h2 {
         text-align: center;
         line-height: normal;
@@ -856,7 +935,13 @@ footer {
         /* display: block; */
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        margin: auto;
+        /* align-items: center; */
+    }
+
+    .member img {
+        max-width: 100%;
+        width: 100%;
     }
 
     .footer-flex {
